@@ -99,6 +99,9 @@
     #contact-page .box-contact .email-box{
         margin: 2em auto 0 auto;
     }
+    #contact-page .contacts-social-midias .socialmidias-wrapper{
+        padding: 2em 0;  
+    }
     #contact-page .contacts-social-midias .socialmidias-box img{
         width: 30px;    
     }

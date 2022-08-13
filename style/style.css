@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Poppins:wght@300&display=swap');
 :root{
     --black:
     #1A1A1A;
@@ -40,7 +39,7 @@ button{
 }
 
 h1{
-    font-family: 'Georgia', serif;
+    font-family: 'Baskervville', serif;
     font-size: 6rem;
     margin-bottom: 0.3em;
 
@@ -52,7 +51,7 @@ h1{
 }
 
 h2{
-    font-family: 'Georgia', serif;
+    font-family: 'Baskervville', serif;
     font-size: 3em;
 }
 p{
@@ -143,6 +142,14 @@ hr{
     min-width: 20vh;
     width: 30em;
     margin-right: 3em;
+
+    background-image: linear-gradient(45deg, var(--gradient));
+    background-clip: border-box;
+    -webkit-background-clip: border-box;
+
+    border-radius: 100%;
+    border: 5px solid transparent;
+
 }
 #about h1{
     color: white;
@@ -176,7 +183,6 @@ hr{
     margin-bottom: 4vh;
 }
 .name-description > p{
-    font-family: 'NewsGoth Lt BT';
     font-weight: bold;
     font-size: 1.3rem;
 
@@ -203,7 +209,7 @@ hr{
     gap: 5vh;
 }
 #contact-page .box-contact h3{
-    font-family: 'Georgia', serif;
+    font-family: 'Baskervville', serif;
     font-size: 2em;
     margin: .2em 0;
 }
