@@ -18,11 +18,10 @@
     }
     #mobile-nav{
         display: block;
-
-        background-color: #1A1A1A;
         height: 7vh;
         width: 100%;
         
+        z-index: 1; /* Posicionar por cima de outros conteúdos que estariam na mesma camada*/
         position: fixed;
         bottom: 0px;
     }
@@ -34,7 +33,7 @@
         justify-content: space-around;
         align-items: center;
     }
-    #mobile-nav .vertical-line{
+    #mobile-nav .separator-lines{
         width: 1px;
         height: 1em;
         background-color: gray;
@@ -47,7 +46,6 @@
     #about .profile{
         flex-direction: column;
         align-items: center;
-        margin-top: 1em;
     }
     #about h1{
         margin-top: 1em;
@@ -69,10 +67,10 @@
     }
     .tools{
         grid-template-columns: repeat(auto-fill, minmax(300px, auto));
-        justify-items: start;
+        margin-bottom: 2em;
+        gap: 0;
     }
     .tools .titles-class{
-        width: calc(100vw - 2*var(--containerWidth));
         font-size: 2em;
 
         display: flex;
@@ -81,9 +79,14 @@
     .tools .list-tools{
         margin-bottom: 0.4em;
     }
+
     .tools .tools-image-name-description{
         margin-top: 1em;
+        margin-left: 1.5em;
         align-items: center;
+    }
+    .tools .tools-image-name-description .name-description .description-items{
+        margin-top: 0;
     }
     .tools img{
         width: 3em;
@@ -138,6 +141,9 @@
     }
     #about .profile .text-profile{
         max-width: 45%;
+    }
+    .tools{
+        padding: 0 3em;
     }
     .box-contact{
         margin-top: 10vh;

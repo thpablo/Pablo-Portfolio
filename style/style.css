@@ -6,6 +6,8 @@
     #202020;
     --light-grey:
     #d8d8d8;
+    --white:
+    #e9e9e9;
     --gradient: 
     #ced9ed,#cfc7fa,#e2c6ee,#efc8dd,#d7e9db;
     --containerWidth: 7vw;
@@ -21,13 +23,27 @@ html,*,body{
     color: white;
     list-style: none;
 }
-body{
-    background-color: #1A1A1A;
+/* ChangeMode modifications */
+.darkmode{
+    background-color: var(--grey);
 }
+.lightmode{
+    background-color: var(--white);
+}
+.textlight{
+    color: black;
+}
+.invertIElements{
+    filter: invert(1);
+}
+.borderLightmode{
+    border-radius: 30px;
+    box-shadow: 0 0 30px grey;
+    backdrop-filter: brightness(1.2);
 
+}
 /* Geral */
 .container{
-    background-color: var(--grey);
     padding-left: var(--containerWidth);
     padding-right: var(--containerWidth);
 }
@@ -43,7 +59,9 @@ h1{
     font-size: 6rem;
     margin-bottom: 0.3em;
 
+    width: min-content;
     background-image: linear-gradient(75deg, var(--gradient));
+    filter: saturate(3);
   /*Background-Clip: text -> Define o limite de onde a cor/imagem vai ir do item (no caso, somente o texto). */
     -webkit-background-clip: text;
     background-clip: text;
@@ -51,7 +69,7 @@ h1{
 }
 
 h2{
-    font-family: 'Baskervville', serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 3em;
 }
 p{
@@ -64,8 +82,7 @@ p{
 .page{
     padding-top: 1em;
     min-height: 90vh;
-    max-width: 100%;
-    background-color: var(--grey);
+
 }
 
 /* Barra Navegação*/
@@ -73,13 +90,13 @@ p{
     display: none;
 }
 nav{
+    backdrop-filter: brightness(2);
+
     width: 100%;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
     height: 10vh;
 
-    background-color: var(--black);
-    color: white;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
 
     display: flex;
     align-items: center;
@@ -90,7 +107,6 @@ nav > div{
     align-items: center;
     justify-content: space-between;
 }
-
 nav img{
     filter: invert(1);
 }
@@ -116,7 +132,6 @@ nav i{
 hr{
     border: none;
     height: 0.4em;
-    width: 100%;
     background-image: linear-gradient(45deg, var(--gradient));
 }
 #top-gradient-bar{
@@ -125,6 +140,7 @@ hr{
 }
 /* Page Sobre*/
 #first-page{
+
     height: 60vh;
 }
 #about{
@@ -141,7 +157,7 @@ hr{
 #about img{
     min-width: 20vh;
     width: 30em;
-    margin-right: 3em;
+    margin-right: 7em;
 
     background-image: linear-gradient(45deg, var(--gradient));
     background-clip: border-box;
@@ -152,9 +168,9 @@ hr{
 
 }
 #about h1{
-    color: white;
     min-width: 20vh;
     font-size: 6rem;
+    width: auto;
 }
 #about p{
     min-width: 20vh;
@@ -162,15 +178,10 @@ hr{
 }
 
 /* Ferramentas Page */
-#tools-page{
-    background-color: var(--black);
-}
 .tools{
-    width: 90%;
-
+    border-radius: 15px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-
     gap: 5rem;
 }
 .tools .titles-class{
@@ -219,7 +230,7 @@ hr{
     justify-content: space-around;
     
     padding: 4em 0;
-    height: 100%;
+
 }
 #contact-page .contacts-social-midias .email-phone p{
     gap: 1em;
@@ -230,7 +241,6 @@ hr{
 
     font-size: 1.2rem;
     font-weight: 100;
-    color: var(--light-grey);
 }
 
 #contact-page .contacts-social-midias .socialmidias-box{

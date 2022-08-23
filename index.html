@@ -15,33 +15,34 @@
 </head>
 
 <body>
-    <div id="mobile-nav">
+    <!-- NavBar -->
+    <div id="mobile-nav" class="darkmode">
         <hr width="100%">
         <ul>
             <li>
                 <a href="#first-page"><i class="fa-solid fa-user"></i></a>
             </li>
-            <div class="vertical-line"></div>
+            <div class="separator-lines"></div>
             <li>
                 <a href="#tools-page"><i class="fa-solid fa-screwdriver-wrench"></i></a>
             </li>
-            <div class="vertical-line"></div>
+            <div class="separator-lines"></div>
             <li>
                 <a href="#projects-page"><i class="fa-solid fa-list-check"></i></a>
             </li>
-            <div class="vertical-line"></div>
+            <div class="separator-lines"></div>
             <li>
                 <a href="#formation-page"><i class="fa-solid fa-graduation-cap"></i></a>
             </li>
-            <div class="vertical-line"></div>
+            <div class="separator-lines"></div>
             <li id="last-icon">
                 <a href="#contact-page"><i class="fa-solid fa-phone"></i></a>
             </li>
         </ul>
     </div>
-    <nav class="container">
+    <nav class="container darkmode">
         <div class="logo-items">
-            <div id="logo"><img src="src/logo.png" width="60vw"></div>
+            <div id="logo"><i><img src="src/logo.png" width="60vw"></i></div>
             <ul id="items-nav">
                 <li><a href="#tools-page">Ferramentas</a></li>
                 <li><a href="#projects-page">Projeto</a></li>
@@ -50,19 +51,20 @@
             </ul>
         </div>
         <div class="language-mode-theme">
-            <button id="language">PT-BR</button>
-            <button><i class="fa-solid fa-lightbulb"></i></button>
+            <i><button id="language">PT-BR</button></i>
+            <button id="lightButton"><i class="fa-solid fa-lightbulb"></i></button>
         </div>
     </nav>
 
     <hr id="top-gradient-bar">
 
-    <div id="first-page" class="page">
+    <!-- Profile Page -->
+    <div id="first-page" class="page darkmode">
         <div class="container container-ultrawide" id="about">
             <div class="profile">
                 <img src="src/Pablo.jpg">
                 <div class="text-profile">
-                    <h1>Olá Todos</h1>
+                    <h1>Olá Todos,</h1>
                     <hr width="100%">
                     <p>Sou Pablo Gonçalves, desenvolvedor FrontEnd e técnico em Automação Industrial pelo IFMG. Estou
                         estudando CSS, HTML e JavaScript de maneira
@@ -70,25 +72,27 @@
                         <strong>Linguagem C</strong>, estudada
                         no curso técnico, e familiaridade com o software <strong>CorelDraw</strong>.
                     </p>
+                    <p id = "teste">teste</p>
                 </div>
             </div>
         </div>
     </div>
     <div id="vertical-nav-scroll-pages">
-        <div id="nav-vertical">
+                    <!--<div id="nav-vertical">
             <ul>
                 <li><a href="#first-page"><i class="fa-solid fa-user"></i></a></li>
-                <div class="vertical-line"></div>
+                <div class="separator-lines"></div>
                 <li><a href="#tools-page"><i class="fa-solid fa-screwdriver-wrench"></i></a></li>
-                <div class="vertical-line"></div>
+                <div class="separator-lines"></div>
                 <li><a href="#projects-page"><i class="fa-solid fa-list-check"></i></a></li>
-                <div class="vertical-line"></div>
+                <div class="separator-lines"></div>
                 <li><a href="#formation-page"><i class="fa-solid fa-graduation-cap"></i></a></li>
-                <div class="vertical-line"></div>
+                <div class="separator-lines"></div>
                 <li id="last-icon"><a href="#contact-page"><i class="fa-solid fa-phone"></i></a></li>
-            </ul>
+            </ul> -->
         </div>
-        <div id="tools-page" class="page container">
+        <!-- Tools Page -->
+        <div id="tools-page" class="page container darkmode">
             <h1>Ferramentas</h1>
             <div class="tools container-ultrawide">
                 <div class="class">
@@ -147,14 +151,15 @@
                 </div>
             </div>
         </div>
-        <div id="projects-page" class="page container container-ultrawide">
+    <!-- Projects Page -->        
+        <div id="projects-page" class="page darkmode container container-ultrawide">
             <h1>Projetos</h1>
             <h2>Aqui jaz um Carrossel</h2>
             <h2>nomeSite - 2021</h2>
             <p>Descrição do site etc etc</p>
         </div>
-
-        <div id="formation-page" class="page container">
+    <!-- Formation Page -->   
+        <div id="formation-page" class="page darkmode container">
             <h1>Formação</h1>
             <div class="courses container-ultrawide">
                 <div class="items-courses">
@@ -172,34 +177,41 @@
             </div>
         </div>
     </div>
-    <div id="contact-page" class="page">
+
+    <!-- Conctats Page -->   
+    <div id="contact-page" class="page darkmode">
         <h1>Contato</h1>
         <div class="box-contact">
             <div class="contacts-social-midias name-description">
                 <div class="email-phone">
-                    <p><i class="fa-solid fa-at"></i>pabloalmeida49@hotmail.com </p>
+                    <p><i class="fa-solid fa-at"></i>pabloalmeida49@hotmail.com</p>
                     <p><i class="fa-solid fa-phone"></i>31 9800-0000</p>
                 </div>
                 <div class="socialmidias-wrapper">
                     <div class="socialmidias-box">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
-                        <div class="socialmidias-item">
+                        <a href="https://github.com/thpablo">
+                            <i><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /></i>
+                            <div class="socialmidias-item">
                             <h3>GitHub</h3>
+                        </a>
                             <p class="description-items">@thpablo</p>
                         </div>
                     </div>
                     <div class="socialmidias-box">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" />
-                        <div class="socialmidias-item">
+                        <a href="https://www.linkedin.com/in/thpablo/">
+                            <i><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" /></i>
+                            <div class="socialmidias-item">
                             <h3>LinkedIn</h3>
+                        </a>
                             <p class="description-items">@thpablo</p>
                         </div>
                     </div>
                     <div class="socialmidias-box">
-                        <img src="https://cdn-icons-png.flaticon.com/512/1077/1077042.png">
-
-                        <div class="socialmidias-item">
+                        <a href="#">
+                            <i><img src="https://cdn-icons-png.flaticon.com/512/1077/1077042.png"></i>
+                            <div class="socialmidias-item"></a>
                             <h3>Twitter</h3>
+                        </a>
                             <p class="description-items">@thpablo</p>
                         </div>
                     </div>
@@ -219,6 +231,7 @@
             </div>
         </div>
     </div>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
