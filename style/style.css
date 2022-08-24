@@ -30,6 +30,12 @@ html,*,body{
 .lightmode{
     background-color: var(--white);
 }
+.darkmodeTwo{
+    background-color: var(--black);
+}
+.lightmodeTwo{
+    background-color: var(--light-grey);
+}
 .textlight{
     color: black;
 }
@@ -58,13 +64,15 @@ h1{
     font-family: 'Baskervville', serif;
     font-size: 6rem;
     margin-bottom: 0.3em;
+    /*text-shadow: -2px 0px black, 0px 2px black, 2px 0px black, 0px -2px black;*/
 
     width: min-content;
     background-image: linear-gradient(75deg, var(--gradient));
     filter: saturate(3);
-  /*Background-Clip: text -> Define o limite de onde a cor/imagem vai ir do item (no caso, somente o texto). */
-    -webkit-background-clip: text;
+    /*Background-Clip: text -> Define o limite de onde a cor/imagem vai ir do item (no caso, somente o texto). */
+   -webkit-background-clip: text;
     background-clip: text;
+
     color: transparent;
 }
 
@@ -127,6 +135,9 @@ nav #language{
 nav i{
     margin-left: 1em;
 }
+button:hover{
+    cursor: pointer;
+}
 
 /*Linha Gradiente Horizontal */
 hr{
@@ -144,6 +155,9 @@ hr{
     height: 60vh;
 }
 #about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 100%;
 }
 #about .profile{
@@ -154,7 +168,7 @@ hr{
     justify-content: center;
     align-items: center;
 }
-#about img{
+#about #profile-image{
     min-width: 20vh;
     width: 30em;
     margin-right: 7em;
@@ -176,6 +190,10 @@ hr{
     min-width: 20vh;
     font-size: 1.5em;
 }
+#svg{
+    width: 15em;
+}
+
 
 /* Ferramentas Page */
 .tools{
@@ -184,7 +202,7 @@ hr{
     grid-template-columns: repeat(3, 1fr);
     gap: 5rem;
 }
-.tools .titles-class{
+.tools .titles-category{
     margin-top: 1em;
     font-weight: 300;
 }
@@ -207,12 +225,69 @@ hr{
     margin-right: 1vw;
     width: 5em;
 }
+/*Formation Pagina*/
+.courses{
+    background-color: "grey";
 
+    display: grid;
+    gap: 3em;
+    justify-content: stretch;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 450px));
+
+    width: 100%;
+}
+.courses-tools{
+    display: grid;
+    grid-template-columns: max-content max-content;
+    gap: 1em;
+    margin-right: auto;
+    margin-left: 2em;
+}
+.courses-tools > p{
+    min-width: min-content;
+    background-color: rgb(59, 59, 59);
+    font-size: 0.75rem;
+    padding: 0.4em;
+    border-radius: 2px;
+
+}
+.items-courses{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    border-radius: 2px;
+
+    gap: 1em;
+    height: 9em;
+}
+.items-courses > p{
+    color: grey;
+
+    /*Posição Absoluta exige elemento ancestral com posição (items-courses)*/
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+.texts-courses > p{
+    text-align: end;
+    font-size: 1.1rem;
+    margin: 0.3em 1em;
+}
+.texts-courses > .description-items{
+    filter: brightness(.7);
+}
+.items-courses hr{
+    justify-items: center;
+    width: 0.5em;
+    height: 100%;
+}
 
 /*Contato Pagina*/
 #contact-page{
+    background-color: var(--black);
     height: 100%;
-    padding: 0 6vw;
+    padding: 2.5vh 6vw;
 }
 .box-contact{
     display: grid;
@@ -258,7 +333,6 @@ hr{
 #contact-page .email-box{
     max-width: 800px;
     padding: 2em;
-    background-color: var(--light-grey)
 }
 
 #contact-page .email-box h2,
@@ -275,11 +349,13 @@ hr{
 }
 
 #contact-page .email-box form input{
+    color: black;
     min-height: 45px;
     max-height: 1vh;
 }
 
 #contact-page .email-box form textarea{
+    color: black;
     height: 300px;
     max-height: 20vh;
 }

@@ -57,20 +57,22 @@
         max-width: 90vw;
     }
     
-    #about img{
+    #about #profile-image{
         width: 1em;
         max-width: 50vh;
         margin-right: 0;
+    }
+    #svg{
+        width: 12em;
     }
     #nav-vertical{
         display: none;
     }
     .tools{
         grid-template-columns: repeat(auto-fill, minmax(300px, auto));
-        margin-bottom: 2em;
-        gap: 0;
+        gap: 3em;
     }
-    .tools .titles-class{
+    .tools .titles-category{
         font-size: 2em;
 
         display: flex;
@@ -107,6 +109,20 @@
     }
     #contact-page .contacts-social-midias .socialmidias-box img{
         width: 30px;    
+    }
+    #contact-page .email-box form input{
+        min-height: 30px;
+        max-height: 1vh;
+    }
+    #contact-page .email-box form textarea{
+        height: 100px;
+        max-height: 20vh;
+    }
+    #contact-page .email-box form button{
+        font-size: 0.8em;
+        width: 20%;
+        min-width: 25px;
+        height: 30px;
     }
 }
 /*      Desktops        */
@@ -149,8 +165,6 @@
         margin-top: 10vh;
         padding: 0 10vw;
     }
-
-
 }
 /*      Desktop HighResolution    */
 @media screen and (min-width: 2560px){

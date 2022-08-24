@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/styleMobile.css">
-    
+
     <link rel="shortcut icon" href="src/icon.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <script src="https://kit.fontawesome.com/82f98385bb.js" crossorigin="anonymous"></script>
@@ -16,6 +16,7 @@
 
 <body>
     <!-- NavBar -->
+    <!-- Mobile NavBar -->
     <div id="mobile-nav" class="darkmode">
         <hr width="100%">
         <ul>
@@ -40,6 +41,7 @@
             </li>
         </ul>
     </div>
+    <!-- Desktop NavBar -->
     <nav class="container darkmode">
         <div class="logo-items">
             <div id="logo"><i><img src="src/logo.png" width="60vw"></i></div>
@@ -56,13 +58,14 @@
         </div>
     </nav>
 
+    <!--Barra Horizontal -->
     <hr id="top-gradient-bar">
 
     <!-- Profile Page -->
     <div id="first-page" class="page darkmode">
         <div class="container container-ultrawide" id="about">
             <div class="profile">
-                <img src="src/Pablo.jpg">
+                <img id="profile-image" src="src/Pablo.jpg">
                 <div class="text-profile">
                     <h1>Olá Todos,</h1>
                     <hr width="100%">
@@ -72,13 +75,13 @@
                         <strong>Linguagem C</strong>, estudada
                         no curso técnico, e familiaridade com o software <strong>CorelDraw</strong>.
                     </p>
-                    <p id = "teste">teste</p>
                 </div>
             </div>
+            <i><img id="svg" src="src/arrow.svg"></i>
         </div>
     </div>
     <div id="vertical-nav-scroll-pages">
-                    <!--<div id="nav-vertical">
+        <!--<div id="nav-vertical">
             <ul>
                 <li><a href="#first-page"><i class="fa-solid fa-user"></i></a></li>
                 <div class="separator-lines"></div>
@@ -90,95 +93,120 @@
                 <div class="separator-lines"></div>
                 <li id="last-icon"><a href="#contact-page"><i class="fa-solid fa-phone"></i></a></li>
             </ul> -->
-        </div>
-        <!-- Tools Page -->
-        <div id="tools-page" class="page container darkmode">
-            <h1>Ferramentas</h1>
-            <div class="tools container-ultrawide">
-                <div class="class">
-                    <h2 class="titles-class">Frontend</h2>
-                    <hr>
-                    <div class="list-tools">
-                        <div class="tools-image-name-description">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-                            <div class="name-description">
-                                <p>HTML 5</p>
-                                <p class="description-items">Básico</p>
-                            </div>
-                        </div>
-                        <div class="tools-image-name-description">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
-                            <div class="name-description">
-                                <p>CSS 3 </p>
-                                <p class="description-items">Básico</p>
-                            </div>
-                        </div>
-                        <div class="tools-image-name-description">
-                            <img
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-                            <div class="name-description">
-                                <p>JavaScript</p>
-                                <p class="description-items">Básico</p>
-                            </div>
+    </div>
+    <!-- Tools Page -->
+    <div id="tools-page" class="page container darkmode">
+        <h1>Ferramentas</h1>
+        <div class="tools container-ultrawide">
+            <div>
+                <h2 class="titles-category">Frontend</h2>
+                <hr>
+                <div class="list-tools">
+                    <div class="tools-image-name-description">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+                        <div class="name-description">
+                            <p>HTML 5</p>
+                            <p class="description-items">Básico</p>
                         </div>
                     </div>
-                </div>
-                <div class="class">
-                    <h2 class="titles-class">Backend</h2>
-                    <hr>
-                    <div class="list-tools">
-                        <div class="tools-image-name-description">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
-                            <div class="name-description">
-                                <p>Linguagem C</p>
-                                <p class="description-items">Básico</p>
-                            </div>
+                    <div class="tools-image-name-description">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+                        <div class="name-description">
+                            <p>CSS 3 </p>
+                            <p class="description-items">Básico</p>
                         </div>
                     </div>
-                </div>
-                <div class="class">
-                    <h2 class="titles-class">Design</h2>
-                    <hr>
-                    <div class="list-tools">
-                        <div class="tools-image-name-description">
-                            <img src="src/CorelDraw.png">
-                            <div class="name-description">
-                                <p>CorelDraw 2021</p>
-                                <p class="description-items">Básico</p>
-                            </div>
+                    <div class="tools-image-name-description">
+                        <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                        <div class="name-description">
+                            <p>JavaScript</p>
+                            <p class="description-items">Básico</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    <!-- Projects Page -->        
-        <div id="projects-page" class="page darkmode container container-ultrawide">
-            <h1>Projetos</h1>
-            <h2>Aqui jaz um Carrossel</h2>
-            <h2>nomeSite - 2021</h2>
-            <p>Descrição do site etc etc</p>
-        </div>
-    <!-- Formation Page -->   
-        <div id="formation-page" class="page darkmode container">
-            <h1>Formação</h1>
-            <div class="courses container-ultrawide">
-                <div class="items-courses">
-                    <p>Técnico Automação Industrial</p>
-                    <p class="name-institutes">IFMG</p>
+            <div>
+                <h2 class="titles-category">Backend</h2>
+                <hr>
+                <div class="list-tools">
+                    <div class="tools-image-name-description">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
+                        <div class="name-description">
+                            <p>Linguagem C</p>
+                            <p class="description-items">Básico</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="items-courses">
-                    <p>Treinamento Profissionalizante em Informática</p>
-                    <p class="name-institutes">CEDASPY</p>
-                </div>
-                <div class="items-courses">
-                    <p>Bootcamp Carrefour Web Developer</p>
-                    <p class="name-institutes">DIO Inc.</p>
+            </div>
+            <div>
+                <h2 class="titles-category">Design</h2>
+                <hr>
+                <div class="list-tools">
+                    <div class="tools-image-name-description">
+                        <img src="src/CorelDraw.png">
+                        <div class="name-description">
+                            <p>CorelDraw 2021</p>
+                            <p class="description-items">Básico</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- Projects Page -->
+    <div id="projects-page" class="page darkmode container container-ultrawide">
+        <h1>Projetos</h1>
+        <h2>Aqui jaz um Carrossel</h2>
+        <h2>nomeSite - 2021</h2>
+        <p>Descrição do site etc etc</p>
+    </div>
+    <!-- Formation Page -->
+    <div id="formation-page" class="page darkmode container">
+        <h1>Formacão</h1>
+        <div class="courses container-ultrawide" >
+            <div class="items-courses darkmodeTwo">
+                <p>2022</p>
+                <div class="courses-tools">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>JavaScript</p>
+                </div>
+                <div class="texts-courses">
+                    <p>Bootcamp Carrefour Web Developer</p>
+                    <p class="description-items">DIO Inc.</p>
+                </div>
+                <hr>
+            </div>
+            <div class="items-courses darkmodeTwo">
+                <p>2021</p>
+                <div class="courses-tools">
+                    <p>Linguagem C</p>
+                </div>
+                <div class="texts-courses">
+                    <p>Técnico Automação Industrial</p>
+                    <p class="description-items">IFMG</p>
+                </div>
+                <hr>
+            </div>
+            <div class="items-courses darkmodeTwo">
+                <p>2018</p>
+                <div class="courses-tools">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>CorelDraw</p>
+                </div>
+                <div class="texts-courses">
+                    <p>Treinamento Profissionalizante em Informática</p>
+                    <p class="description-items">CEDASPY</p>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+    </div>
 
-    <!-- Conctats Page -->   
+    <!-- Contacts Page -->
     <div id="contact-page" class="page darkmode">
         <h1>Contato</h1>
         <div class="box-contact">
@@ -190,46 +218,49 @@
                 <div class="socialmidias-wrapper">
                     <div class="socialmidias-box">
                         <a href="https://github.com/thpablo">
-                            <i><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /></i>
+                            <i><img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /></i>
                             <div class="socialmidias-item">
-                            <h3>GitHub</h3>
+                                <h3>GitHub</h3>
                         </a>
-                            <p class="description-items">@thpablo</p>
-                        </div>
-                    </div>
-                    <div class="socialmidias-box">
-                        <a href="https://www.linkedin.com/in/thpablo/">
-                            <i><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" /></i>
-                            <div class="socialmidias-item">
-                            <h3>LinkedIn</h3>
-                        </a>
-                            <p class="description-items">@thpablo</p>
-                        </div>
-                    </div>
-                    <div class="socialmidias-box">
-                        <a href="#">
-                            <i><img src="https://cdn-icons-png.flaticon.com/512/1077/1077042.png"></i>
-                            <div class="socialmidias-item"></a>
-                            <h3>Twitter</h3>
-                        </a>
-                            <p class="description-items">@thpablo</p>
-                        </div>
+                        <p class="description-items">@thpablo</p>
                     </div>
                 </div>
+                <div class="socialmidias-box">
+                    <a href="https://www.linkedin.com/in/thpablo/">
+                        <i><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" /></i>
+                        <div class="socialmidias-item">
+                            <h3>LinkedIn</h3>
+                    </a>
+                    <p class="description-items">@thpablo</p>
+                </div>
             </div>
-            <div class="email-box">
-                <h2>Vamos criar algo incrível!</h2>
-                <form>
-                    <p>Email:</p>
-                    <input type="text" value="Email">
-                    <p>Assunto:</p>
-                    <input type="text" value="Assunto">
-                    <p>Mensagem:</p>
-                    <textarea></textarea>
-                    <button>ENVIAR</button>
-                </form>
+            <div class="socialmidias-box">
+                <a href="#">
+                    <i><img src="https://cdn-icons-png.flaticon.com/512/1077/1077042.png"></i>
+                    <div class="socialmidias-item">
+                </a>
+                <h3>Twitter</h3>
+                </a>
+                <p class="description-items">@thpablo</p>
             </div>
         </div>
+    </div>
+    </div>
+    <div class="email-box lightmodeTwo">
+        <h2 class="textInEmailBox">Vamos criar algo incrível!</h2>
+        <form>
+            <p class="textInEmailBox">Email:</p>
+            <input type="text">
+            <p class="textInEmailBox">Assunto:</p>
+            <input type="text">
+            <p class="textInEmailBox">Mensagem:</p>
+            <textarea></textarea>
+            <button>ENVIAR</button>
+        </form>
+    </div>
+    </div>
     </div>
     <script src="js/script.js"></script>
 </body>
