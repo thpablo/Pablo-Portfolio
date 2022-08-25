@@ -46,7 +46,6 @@ html,*,body{
     border-radius: 30px;
     box-shadow: 0 0 30px grey;
     backdrop-filter: brightness(1.2);
-
 }
 /* Geral */
 .container{
@@ -190,16 +189,16 @@ hr{
     min-width: 20vh;
     font-size: 1.5em;
 }
-#svg{
-    width: 15em;
-}
 
 
 /* Ferramentas Page */
 .tools{
+    margin: 0 auto;
+    max-width: 1200px;
     border-radius: 15px;
+
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     gap: 5rem;
 }
 .tools .titles-category{
@@ -245,11 +244,9 @@ hr{
 }
 .courses-tools > p{
     min-width: min-content;
-    background-color: rgb(59, 59, 59);
     font-size: 0.75rem;
     padding: 0.4em;
     border-radius: 2px;
-
 }
 .items-courses{
     display: flex;

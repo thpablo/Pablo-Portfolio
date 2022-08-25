@@ -35,10 +35,8 @@ modeButton.addEventListener("click", ()=>{
         elementsI[i].classList.toggle("invertIElements");
     
     /* Inserindo Bordas Sombreadas para listas de items no modo Branco*/
-    if(document.getElementById("tools-page").classList.contains("lightmode") === true)
-        tools.classList.add("borderLightmode");
-    else
-        tools.classList.remove("borderLightmode");
+    tools.classList.toggle("borderLightmode");
+
 
     /*Formulario Contato por email*/
     for(let i = 0; i < listDarkMode.length; i++){
